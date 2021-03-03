@@ -40,7 +40,6 @@ class ProductManagerTest {
         repository.save(third);
         repository.save(fourth);
 
-        manager.removeById(id);
         assertThrows(NotFoundException.class, () -> manager.removeById(id));
     }
 }
